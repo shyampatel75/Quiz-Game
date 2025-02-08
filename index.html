@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/demo7.css">
+    <title>demo7</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+</head>
+
+<body>
+    <div id="quiz-heading" class="quiz-heading"></div>
+    <div id="Rulse" class="Rulse"></div>
+    <div id="quiz-container">
+        <h3 id="question-text"></h3>
+        <div id="options-container"></div>
+    </div>
+    <div class="time-scroe-submit">
+        <div id="current-score" class="text-center current-score"></div>
+        <div id="timer" class="timer"></div>
+        <button id="submit-button" class="container-button" style="display:none;">Submit</button>
+    </div>
+    <div class="start-buttondiv">
+        <button id="start-button">Start Quiz</button>
+    </div>
+    <div id="overlay"></div>
+    <div class="popup-box" id="popup-box">
+        <h3 id="popup-message"></h3>
+        <button id="next-button">Next Question</button>
+    </div>
+    <div id="results" style="display: none;">
+        <h2>Quiz Results</h2>
+        <table style="width: 100%; text-align: center;">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid">Question</th>
+                    <th style="border: 1px solid">Selected Answer</th>
+                    <th style="border: 1px solid">Correct Answer</th>
+                    <th style="border: 1px solid">Result</th>
+                    <th style="border: 1px solid">marks</th>
+                </tr>
+            </thead>
+            <tbody id="results-body"></tbody>
+        </table>
+    </div>
+
+
+    <script src="/demo7.js"></script>
+</body>
+
+</html>
